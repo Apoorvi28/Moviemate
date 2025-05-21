@@ -15,12 +15,12 @@ function Navbar() {
         <h2>VideoSync</h2> {/* Logo or name */}
       </div>
       <div>
-        <Link to="/" style={{ color: "white", marginRight: "15px", textDecoration: "none" }}>
+        {/* <Link to="/" style={{ color: "white", marginRight: "15px", textDecoration: "none" }}>
           Home
         </Link>
         <Link to="/create-room" style={{ color: "white", textDecoration: "none" }}>
           Create Room
-        </Link>
+        </Link> */}
       </div>
     </nav>
   );

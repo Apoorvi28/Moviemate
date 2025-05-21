@@ -7,7 +7,7 @@
   
   body {
     font-family: 'Arial', sans-serif;
-    background-color: #f9f9f9;
+    background-color: #070101;
     color: #333;
     line-height: 1.6;
     text-align: center;
@@ -24,18 +24,40 @@
   }
   
   /* Header */
-  h1, h2 {
-    margin-bottom: 20px;
-    color: #333;
-  }
+  
   
   h2 {
     font-size: 24px;
+    margin-bottom: 20px;
+    color: #f8f1f1;
   }
   
   h1 {
-    font-size: 36px;
+    font-size: 50px;
+    margin-bottom: 20px;
+    background: linear-gradient(to right, #fcd5ce, #ff7f50, #8b0000); /* light pink → warm orange → deep red */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text; /* For Firefox */
+    color: transparent;
+    animation: wipeText .5s ease-out forwards;
+  opacity: 0;
+}
+
+@keyframes wipeText {
+  0% {
+    background-position: 0% center;
+    opacity: 0;
   }
+  100% {
+    background-position: 100% center;
+    opacity: 1;
+  }
+}
+ 
+  
+  
+  
   
   /* Button styles */
   button {

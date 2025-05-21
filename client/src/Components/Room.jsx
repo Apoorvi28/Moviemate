@@ -238,15 +238,18 @@ function Room() {
   if (!isUsernameSet) {
     return (
       <div className="username-box">
-        <h2>Enter your name to join Room</h2>
-        <input value={username} onChange={e => setUsername(e.target.value)} placeholder="Your name" />
-        <select value={genre} onChange={e => setGenre(e.target.value)}>
+        <h1>Enter your name to join Room</h1>
+        <input className="username-input" value={username} onChange={e => setUsername(e.target.value)} placeholder="Your name" />
+        <br></br>
+        <select className="username-input" value={genre} onChange={e => setGenre(e.target.value)}>
           <option value="">Select Genre</option>
           <option value="horror">Horror</option>
           <option value="romance">Romance</option>
           <option value="action">Action</option>
           <option value="comedy">Comedy</option>
         </select>
+        <br></br>
+        <br></br>
         <button onClick={handleUsernameSubmit}>Join</button>
       </div>
     );

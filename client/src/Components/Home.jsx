@@ -42,7 +42,7 @@ function Home() {
 
   return (
     <div style={{ textAlign: "center", marginTop: "50px" }}>
-      <h2>Welcome to Watch Party 🎬</h2>
+      <h1>Welcome to Watch Party 🎬</h1>
 
       {isLoggedIn ? (
         <>
